@@ -15,6 +15,7 @@ body{
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
+    overflow: hidden;
 }
 
 .navbar{
@@ -70,10 +71,10 @@ body{
 }
 
 img{
-    width: 560px;
+    width: 50%;
     margin-top: 9vh;
     border-radius: 50px;
-    height: 560px;
+    height: auto;
 }
 
 .header h2{
@@ -118,3 +119,30 @@ footer{
 footer p{
     text-align: center;
 }
+
+.map-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px) { 
+    .header .container{ 
+      display: block;
+    }
+
+    .boxes .container{
+        display: block;
+        
+    }
+    img{
+        width: 90%;
+        height: auto;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+    
+  }
